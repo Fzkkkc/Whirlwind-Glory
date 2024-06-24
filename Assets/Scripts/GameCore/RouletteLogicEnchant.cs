@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace GameCore
@@ -26,17 +28,40 @@ namespace GameCore
         [SerializeField] private List<Combinations> _sixthRowCombinations;
         [SerializeField] private List<float> _checkWinPosition;
         
+        [SerializeField] private TextMeshProUGUI _betText;
+        [SerializeField] private TextMeshProUGUI _winCountText;
+        [SerializeField] private TextMeshProUGUI _winPopupText;
+        
+        [SerializeField] private Button _actionButton;
+        
+        [SerializeField] private int _maxBetCount = 2500;
+        [SerializeField] private int _minBetCount = 25;
+        [SerializeField] private Animator _baloonsAnimator;
+        [SerializeField] private string _winAnimatorString;
+        
+        [HideInInspector] public int BetCount;
+        
+        private int _winCount = 0;
+        
         public RectTransform[] rouletteRows; 
         
         public bool _isSpining = false;
         public int coroutineCounter = 0;
         
+        [SerializeField] private bool _testMode;
+
         private void Start()
         {
-            //BetCount = 5;
-            //UpdateBetText();
+            BetCount = _minBetCount;
+            UpdateUiText();
+            GameInstance.UINavigation.OnActivePopupChanged += ResetWinCounter;
         }
-        
+
+        private void OnDestroy()
+        {
+            GameInstance.UINavigation.OnActivePopupChanged -= ResetWinCounter;
+        }
+
         private IEnumerator SpinRoulette(RectTransform row)
         {
             float duration = Random.Range(2.0f, 4.0f); 
@@ -92,6 +117,7 @@ namespace GameCore
             coroutineCounter++;
             if (coroutineCounter == rouletteRows.Length && _isSpining)
             {
+                _actionButton.interactable = true;
                 CheckWin();
                 _isSpining = false;
                 coroutineCounter = 0;
@@ -100,15 +126,29 @@ namespace GameCore
 
         public void SpinRoulette()
         {
-            //if (_gameUINavigation.IsPopupPauseOpened) return;
-            //if(!GameInstance.MoneyManager.HasEnoughCoinsCurrency((ulong)BetCount)) return;
-            //GameInstance.MoneyManager.SpendCoinsCurrency((ulong)BetCount);
+            if(!GameInstance.MoneyManager.HasEnoughCoinsCurrency((ulong)BetCount)) return;
+            GameInstance.MoneyManager.SpendCoinsCurrency((ulong)BetCount);
+            _actionButton.interactable = false;
             foreach (var row in rouletteRows)
             {
                 _isSpining = true;
                 StartCoroutine(SpinRoulette(row));
             }
             
+        }
+        
+        public void RaiseBet(int betCount)
+        {
+            if (BetCount == _minBetCount && betCount < 0) return;
+            if (BetCount == _maxBetCount && betCount > 0) return;
+            BetCount += betCount;
+            UpdateUiText();
+        }
+
+        private void UpdateUiText()
+        {
+            _betText.text = $"{BetCount}";
+            _winCountText.text = $"{_winCount}";
         }
         
         private void CheckWin()
@@ -507,12 +547,37 @@ namespace GameCore
             {
                 WinBonus();
             }
+
+            if (_testMode)
+            {
+                WinBonus();
+            }
         }
         
         private void WinBonus()
         {
             var reward = Random.Range(50, 200);
+            reward += BetCount*2;
             GameInstance.MoneyManager.AddCoinsCurrency((ulong) reward);
+            _winCount += reward;
+            UpdateUiText();
+
+            _winPopupText.text = $"WIN {reward}";
+
+            if (reward > 3500)
+            {
+                _baloonsAnimator.SetTrigger(_winAnimatorString);
+            }
+            else
+            {
+                _baloonsAnimator.SetTrigger("ConfettiIn");
+            }
+        }
+
+        private void ResetWinCounter()
+        {
+            _winCount = 0;
+            UpdateUiText();
         }
     }
 }

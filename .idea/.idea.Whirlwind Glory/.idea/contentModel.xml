@@ -16,6 +16,7 @@
             <e p="LoadingScreen.cs" t="Include" />
             <e p="SettingsButtonAnimation.cs" t="Include" />
             <e p="UINavigation.cs" t="Include" />
+            <e p="UITextMoney.cs" t="Include" />
             <e p="VolumeButton.cs" t="Include" />
           </e>
         </e>

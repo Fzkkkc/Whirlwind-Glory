@@ -20,12 +20,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/SettingsButtonAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/WheelLogic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UITextMoney.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogicEnchant.cs" />
       </list>
     </option>
@@ -71,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718961441731</updated>
       <workItem from="1718961451669" duration="2255000" />
-      <workItem from="1719215671334" duration="13095000" />
+      <workItem from="1719215671334" duration="19286000" />
     </task>
     <servers />
   </component>

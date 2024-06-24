@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,9 @@ namespace UserInterface
         public CanvasGroup LoadingMenu;
         public CanvasGroup GameMenu;
 
-        private void Start()
+        public Action OnActivePopupChanged;
+        
+        public void Init()
         {
             ResetPopups();
             OpenGroup(LoadingMenu);
@@ -92,6 +95,8 @@ namespace UserInterface
                     GamePopups[i].interactable = false;
                 }
             }
+            
+            OnActivePopupChanged?.Invoke();
         }
     }
 }
