@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2b93e8fd-0096-4b75-bcbd-24efdcb36b46" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,16 +11,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/SettingsButtonAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/WheelLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogicEnchant.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2iBQMMENSaR8GS3l9DhTvt2pKyR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718961441731</updated>
       <workItem from="1718961451669" duration="2255000" />
+      <workItem from="1719215671334" duration="13095000" />
     </task>
     <servers />
   </component>
@@ -64,7 +80,24 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1719227555334">
+      <screen x="0" y="0" width="1707" height="912" />
+    </state>
+    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1707.912@0.0.1707.912" timestamp="1719227555334" />
   </component>
 </project>
