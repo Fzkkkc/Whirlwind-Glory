@@ -12,10 +12,10 @@ namespace GameCore
         public static UINavigation UINavigation => Default._uiNavigation;
 
         protected override void Awake()
-        {
+        { 
             //PlayerPrefs.DeleteAll();
             base.Awake();
-            _moneyManager.Init(3000);
+            _moneyManager.Init(0);
             _uiNavigation.Init();
         }
     }

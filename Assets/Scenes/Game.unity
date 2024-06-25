@@ -1930,7 +1930,7 @@ MonoBehaviour:
   - {fileID: 1295695469}
   _isSpining: 0
   coroutineCounter: 0
-  _testMode: 1
+  _testMode: 0
 --- !u!1 &252043588
 GameObject:
   m_ObjectHideFlags: 0

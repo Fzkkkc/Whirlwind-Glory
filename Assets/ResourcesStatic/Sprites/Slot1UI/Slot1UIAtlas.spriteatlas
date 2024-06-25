@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Slot1UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 187e0e047f75c3a4bb8cc30d4896a096, type: 3}
+    - {fileID: 2800000, guid: a258d2f47ace7044ab3caacdfb16993b, type: 3}
+    - {fileID: 2800000, guid: 8089e6f94be315c4d93d6e72703ae6c2, type: 3}
+    - {fileID: 2800000, guid: af8f3cf3f1b268a49be1917b590f0471, type: 3}
+    - {fileID: 2800000, guid: 86a6b8b40a19f624388e589e55a647a5, type: 3}
+    - {fileID: 2800000, guid: 28c04e025d2c92543a8c04065205b6cb, type: 3}
+    - {fileID: 2800000, guid: 904f90cdb835ee64fa2af474bc95a398, type: 3}
+    - {fileID: 2800000, guid: 1c5c9dcf9f7a427468bac5c0624193cd, type: 3}
+    - {fileID: 2800000, guid: 497b64db0b372de47b2a9fe250d36b4e, type: 3}
+    - {fileID: 2800000, guid: 74a7073056554ef4bb0b9ab3d807c88a, type: 3}
+    - {fileID: 2800000, guid: 4e40cf853a0e0b641a515ab6aa3cfb32, type: 3}
+    - {fileID: 2800000, guid: 2705ca4415290d847a02f3c0b4fdebcb, type: 3}
+    - {fileID: 2800000, guid: a90960c07389a804e8dc85dede675fc1, type: 3}
+    - {fileID: 2800000, guid: c6a5d44139089804fa0f6eec271ec028, type: 3}
+    - {fileID: 2800000, guid: f94dd1c1db1cf164c88792e14eb848e0, type: 3}
+    - {fileID: 2800000, guid: a930717a082bfba4a9c974eee4ba0a1f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 74a7073056554ef4bb0b9ab3d807c88a: 21300000
+    - a90960c07389a804e8dc85dede675fc1: 21300000
+    - c6a5d44139089804fa0f6eec271ec028: 21300000
+    - f94dd1c1db1cf164c88792e14eb848e0: 21300000
+    - 28c04e025d2c92543a8c04065205b6cb: 21300000
+    - af8f3cf3f1b268a49be1917b590f0471: 21300000
+    - 187e0e047f75c3a4bb8cc30d4896a096: 21300000
+    - 2705ca4415290d847a02f3c0b4fdebcb: 21300000
+    - 86a6b8b40a19f624388e589e55a647a5: 21300000
+    - a258d2f47ace7044ab3caacdfb16993b: 21300000
+    - 4e40cf853a0e0b641a515ab6aa3cfb32: 21300000
+    - 8089e6f94be315c4d93d6e72703ae6c2: 21300000
+    - a930717a082bfba4a9c974eee4ba0a1f: 21300000
+    - 497b64db0b372de47b2a9fe250d36b4e: 21300000
+    - 904f90cdb835ee64fa2af474bc95a398: 21300000
+    - 1c5c9dcf9f7a427468bac5c0624193cd: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 74a7073056554ef4bb0b9ab3d807c88a, type: 3}
+  - {fileID: 21300000, guid: a90960c07389a804e8dc85dede675fc1, type: 3}
+  - {fileID: 21300000, guid: c6a5d44139089804fa0f6eec271ec028, type: 3}
+  - {fileID: 21300000, guid: f94dd1c1db1cf164c88792e14eb848e0, type: 3}
+  - {fileID: 21300000, guid: 28c04e025d2c92543a8c04065205b6cb, type: 3}
+  - {fileID: 21300000, guid: af8f3cf3f1b268a49be1917b590f0471, type: 3}
+  - {fileID: 21300000, guid: 187e0e047f75c3a4bb8cc30d4896a096, type: 3}
+  - {fileID: 21300000, guid: 2705ca4415290d847a02f3c0b4fdebcb, type: 3}
+  - {fileID: 21300000, guid: 86a6b8b40a19f624388e589e55a647a5, type: 3}
+  - {fileID: 21300000, guid: a258d2f47ace7044ab3caacdfb16993b, type: 3}
+  - {fileID: 21300000, guid: 4e40cf853a0e0b641a515ab6aa3cfb32, type: 3}
+  - {fileID: 21300000, guid: 8089e6f94be315c4d93d6e72703ae6c2, type: 3}
+  - {fileID: 21300000, guid: a930717a082bfba4a9c974eee4ba0a1f, type: 3}
+  - {fileID: 21300000, guid: 497b64db0b372de47b2a9fe250d36b4e, type: 3}
+  - {fileID: 21300000, guid: 904f90cdb835ee64fa2af474bc95a398, type: 3}
+  - {fileID: 21300000, guid: 1c5c9dcf9f7a427468bac5c0624193cd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Frame 117
+  - Group 2
+  - Group 4
+  - "\u0411\u0413"
+  - cupcakes_symbol_2022_09_14
+  - cupcakes_symbol_2022_09_06
+  - cupcakes_symbol_2022_09_03
+  - Group 1
+  - cupcakes_symbol_2022_09_09
+  - cupcakes_symbol_2022_09_04
+  - Frame 119
+  - cupcakes_symbol_2022_09_05
+  - "\u0421\u043B\u043E\u0439 1 1"
+  - Frame 116
+  - Frame 15
+  - Frame 59
+  m_RenderDataMap: {}
+  m_Tag: Slot1UIAtlas
+  m_IsVariant: 0
