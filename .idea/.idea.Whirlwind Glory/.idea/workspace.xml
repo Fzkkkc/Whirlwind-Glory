@@ -6,9 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b93e8fd-0096-4b75-bcbd-24efdcb36b46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +30,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogicEnchant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
       </list>
     </option>
   </component>
@@ -48,6 +46,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -86,7 +85,7 @@
       <workItem from="1720084829982" duration="3975000" />
       <workItem from="1720701941177" duration="627000" />
       <workItem from="1720777132799" duration="628000" />
-      <workItem from="1721044018796" duration="6764000" />
+      <workItem from="1721044018796" duration="7433000" />
     </task>
     <servers />
   </component>
@@ -115,6 +114,10 @@
       <screen x="0" y="0" width="1707" height="912" />
     </state>
     <state x="93" y="93" width="1521" height="727" key="VCS.FileHistoryDialog/0.0.1707.912@0.0.1707.912" timestamp="1721059015507" />
+    <state x="510" y="209" key="run.anything.popup" timestamp="1721061201103">
+      <screen x="0" y="0" width="1707" height="912" />
+    </state>
+    <state x="510" y="209" key="run.anything.popup/0.0.1707.912@0.0.1707.912" timestamp="1721061201103" />
     <state x="516" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1719227555334">
       <screen x="0" y="0" width="1707" height="912" />
     </state>

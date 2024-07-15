@@ -9,6 +9,7 @@ namespace UserInterface
     {
         public List<CanvasGroup> GamePopups;
         public List<CanvasGroup> GameShipPopups;
+        public List<CanvasGroup> GameBattleShipPopups;
         [SerializeField] private Animator _transitionAnimator;
         
         public CanvasGroup LoadingMenu;
@@ -35,6 +36,13 @@ namespace UserInterface
             }
             
             foreach (var popup in GameShipPopups)
+            {
+                popup.alpha = 0f;
+                popup.blocksRaycasts = false;
+                popup.interactable = false;
+            }
+            
+            foreach (var popup in GameBattleShipPopups)
             {
                 popup.alpha = 0f;
                 popup.blocksRaycasts = false;
@@ -126,6 +134,27 @@ namespace UserInterface
                     GameShipPopups[i].alpha = 0f;
                     GameShipPopups[i].blocksRaycasts = false;
                     GameShipPopups[i].interactable = false;
+                }
+            }
+            
+            OnActivePopupChanged?.Invoke();
+        }
+        
+        private void SelectShipBattlePopup(int selectedIndex)
+        {
+            for (var i = 0; i < GameBattleShipPopups.Count; i++)
+            {
+                if (i == selectedIndex)
+                {
+                    GameBattleShipPopups[i].alpha = 1f;
+                    GameBattleShipPopups[i].blocksRaycasts = true;
+                    GameBattleShipPopups[i].interactable = true;
+                }
+                else
+                {
+                    GameBattleShipPopups[i].alpha = 0f;
+                    GameBattleShipPopups[i].blocksRaycasts = false;
+                    GameBattleShipPopups[i].interactable = false;
                 }
             }
             
