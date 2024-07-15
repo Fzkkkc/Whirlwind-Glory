@@ -11,7 +11,7 @@ namespace GameCore
         
         private ulong PrefsMoney
         {
-            get => ulong.Parse(PlayerPrefs.GetString("PREFS_Money", "100"));
+            get => ulong.Parse(PlayerPrefs.GetString("PREFS_Money", "500"));
             set => PlayerPrefs.SetString("PREFS_Money", value.ToString());
         }
         public void Init(ulong startMoney)

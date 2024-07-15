@@ -8,18 +8,21 @@ namespace UserInterface
     public class UINavigation : MonoBehaviour
     {
         public List<CanvasGroup> GamePopups;
+        public List<CanvasGroup> GameShipPopups;
         [SerializeField] private Animator _transitionAnimator;
         
         public CanvasGroup LoadingMenu;
         public CanvasGroup GameMenu;
 
         public Action OnActivePopupChanged;
+        public Action OnGameStarted;
         
         public void Init()
         {
             ResetPopups();
             OpenGroup(LoadingMenu);
             CloseGroup(GameMenu);
+            ResetPopups();
         }
 
         private void ResetPopups()
@@ -30,33 +33,42 @@ namespace UserInterface
                 popup.blocksRaycasts = false;
                 popup.interactable = false;
             }
+            
+            foreach (var popup in GameShipPopups)
+            {
+                popup.alpha = 0f;
+                popup.blocksRaycasts = false;
+                popup.interactable = false;
+            }
         }
         
         public void OpenMenu()
         {
-            StartCoroutine(OpenPopup(0));
+            StartCoroutine(OpenPopup(0,0));
         }
         
         public void OpenWheelPopup()
         {
-            StartCoroutine(OpenPopup(1));
+            StartCoroutine(OpenPopup(1,0));
         }
 
-        public void OpenSlotCandy()
+        public void OpenShipUI()
         {
-            StartCoroutine(OpenPopup(2));
+            StartCoroutine(OpenPopup(2,0));
+            OnGameStarted?.Invoke();
+        }
+
+        public void OpenBattleUI()
+        {
+            StartCoroutine(OpenPopup(2, 1));
         }
         
-        public void OpenSlotSea()
-        {
-            StartCoroutine(OpenPopup(3));
-        }
-        
-        private IEnumerator OpenPopup(int index)
+        private IEnumerator OpenPopup(int index, int indexDop)
         {
             TransitionAnimation();
             yield return new WaitForSeconds(1f);
             SelectPopup(index);
+            SelectShipPopup(indexDop);
         }
 
         public void TransitionAnimation()
@@ -93,6 +105,27 @@ namespace UserInterface
                     GamePopups[i].alpha = 0f;
                     GamePopups[i].blocksRaycasts = false;
                     GamePopups[i].interactable = false;
+                }
+            }
+            
+            OnActivePopupChanged?.Invoke();
+        }
+        
+        private void SelectShipPopup(int selectedIndex)
+        {
+            for (var i = 0; i < GameShipPopups.Count; i++)
+            {
+                if (i == selectedIndex)
+                {
+                    GameShipPopups[i].alpha = 1f;
+                    GameShipPopups[i].blocksRaycasts = true;
+                    GameShipPopups[i].interactable = true;
+                }
+                else
+                {
+                    GameShipPopups[i].alpha = 0f;
+                    GameShipPopups[i].blocksRaycasts = false;
+                    GameShipPopups[i].interactable = false;
                 }
             }
             

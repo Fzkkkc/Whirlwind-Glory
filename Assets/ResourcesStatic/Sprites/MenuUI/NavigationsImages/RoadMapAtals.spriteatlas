@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RoadMapAtals
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 8f7675a9ea1fc5b4cb2a38d2e1a8f893, type: 3}
+    - {fileID: 2800000, guid: a6bd081360bf46e47b59d15088781493, type: 3}
+    - {fileID: 2800000, guid: f0a87c2df5b15b94aa456c9e0d19953a, type: 3}
+    - {fileID: 2800000, guid: a05e430c76029ca4895cd9c8463bf027, type: 3}
+    - {fileID: 2800000, guid: 05fe50b00c9c7dc418863fa938138887, type: 3}
+    - {fileID: 2800000, guid: ff74a0a6c6a110248bcf7e5325fb788d, type: 3}
+    - {fileID: 2800000, guid: 5105490f88135d84aa4f27361434b420, type: 3}
+    - {fileID: 2800000, guid: 2aa3cec666407494ca57f89a49b186e3, type: 3}
+    - {fileID: 2800000, guid: 47b9bb877cba09c4c8950c1697cbd381, type: 3}
+    - {fileID: 2800000, guid: 7ed3ad1d7dda11d4d8052cbeab6cef8c, type: 3}
+    - {fileID: 2800000, guid: bc5ee2a9ac85fe94f909828ff569c09c, type: 3}
+    - {fileID: 2800000, guid: 4e9017f2d62c0e747936734d4ead715e, type: 3}
+    - {fileID: 2800000, guid: cd8d26382b00604469bfb7565c61c4f7, type: 3}
+    - {fileID: 2800000, guid: d1aba23a3cbc5b443a67887011f7af30, type: 3}
+    - {fileID: 2800000, guid: 6479d9a438f850b40a351ff34e425621, type: 3}
+    - {fileID: 2800000, guid: 35204bbca54537543b5a2a9f17ddfdff, type: 3}
+    - {fileID: 2800000, guid: 1d43e2b6a428d2d4999f6e05997bbf27, type: 3}
+    - {fileID: 2800000, guid: 635333547d6a5f945a115c3f978c037f, type: 3}
+    - {fileID: 2800000, guid: e64dcc19780cb9e43bc9ebea7b1f336f, type: 3}
+    - {fileID: 2800000, guid: 72fa15d251f68b34293aea0e51980250, type: 3}
+    - {fileID: 2800000, guid: 1fc9ee8399ca7334f89172a88b37f462, type: 3}
+    - {fileID: 2800000, guid: 3e1ec5ac1eef9324f96081976d936063, type: 3}
+    - {fileID: 2800000, guid: 2064a3e97a2c76d4aa703e5151176701, type: 3}
+    - {fileID: 2800000, guid: 3fc2257c5c3a6594db223f34c0e8ef33, type: 3}
+    - {fileID: 2800000, guid: bcee52ee089fad44cbd89ebbc4a50597, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 05fe50b00c9c7dc418863fa938138887: 21300000
+    - 72fa15d251f68b34293aea0e51980250: 21300000
+    - 4e9017f2d62c0e747936734d4ead715e: 21300000
+    - a6bd081360bf46e47b59d15088781493: 21300000
+    - 1fc9ee8399ca7334f89172a88b37f462: 21300000
+    - 635333547d6a5f945a115c3f978c037f: 21300000
+    - 6479d9a438f850b40a351ff34e425621: 21300000
+    - ff74a0a6c6a110248bcf7e5325fb788d: 21300000
+    - 1d43e2b6a428d2d4999f6e05997bbf27: 21300000
+    - 2aa3cec666407494ca57f89a49b186e3: 21300000
+    - 47b9bb877cba09c4c8950c1697cbd381: 21300000
+    - cd8d26382b00604469bfb7565c61c4f7: 21300000
+    - e64dcc19780cb9e43bc9ebea7b1f336f: 21300000
+    - bc5ee2a9ac85fe94f909828ff569c09c: 21300000
+    - 8f7675a9ea1fc5b4cb2a38d2e1a8f893: 21300000
+    - 2064a3e97a2c76d4aa703e5151176701: 21300000
+    - d1aba23a3cbc5b443a67887011f7af30: 21300000
+    - a05e430c76029ca4895cd9c8463bf027: 21300000
+    - 3fc2257c5c3a6594db223f34c0e8ef33: 21300000
+    - 3e1ec5ac1eef9324f96081976d936063: 21300000
+    - 35204bbca54537543b5a2a9f17ddfdff: 21300000
+    - 7ed3ad1d7dda11d4d8052cbeab6cef8c: 21300000
+    - f0a87c2df5b15b94aa456c9e0d19953a: 21300000
+    - bcee52ee089fad44cbd89ebbc4a50597: 21300000
+    - 5105490f88135d84aa4f27361434b420: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 05fe50b00c9c7dc418863fa938138887, type: 3}
+  - {fileID: 21300000, guid: 72fa15d251f68b34293aea0e51980250, type: 3}
+  - {fileID: 21300000, guid: 4e9017f2d62c0e747936734d4ead715e, type: 3}
+  - {fileID: 21300000, guid: a6bd081360bf46e47b59d15088781493, type: 3}
+  - {fileID: 21300000, guid: 1fc9ee8399ca7334f89172a88b37f462, type: 3}
+  - {fileID: 21300000, guid: 635333547d6a5f945a115c3f978c037f, type: 3}
+  - {fileID: 21300000, guid: 6479d9a438f850b40a351ff34e425621, type: 3}
+  - {fileID: 21300000, guid: ff74a0a6c6a110248bcf7e5325fb788d, type: 3}
+  - {fileID: 21300000, guid: 1d43e2b6a428d2d4999f6e05997bbf27, type: 3}
+  - {fileID: 21300000, guid: 2aa3cec666407494ca57f89a49b186e3, type: 3}
+  - {fileID: 21300000, guid: 47b9bb877cba09c4c8950c1697cbd381, type: 3}
+  - {fileID: 21300000, guid: cd8d26382b00604469bfb7565c61c4f7, type: 3}
+  - {fileID: 21300000, guid: e64dcc19780cb9e43bc9ebea7b1f336f, type: 3}
+  - {fileID: 21300000, guid: bc5ee2a9ac85fe94f909828ff569c09c, type: 3}
+  - {fileID: 21300000, guid: 8f7675a9ea1fc5b4cb2a38d2e1a8f893, type: 3}
+  - {fileID: 21300000, guid: 2064a3e97a2c76d4aa703e5151176701, type: 3}
+  - {fileID: 21300000, guid: d1aba23a3cbc5b443a67887011f7af30, type: 3}
+  - {fileID: 21300000, guid: a05e430c76029ca4895cd9c8463bf027, type: 3}
+  - {fileID: 21300000, guid: 3fc2257c5c3a6594db223f34c0e8ef33, type: 3}
+  - {fileID: 21300000, guid: 3e1ec5ac1eef9324f96081976d936063, type: 3}
+  - {fileID: 21300000, guid: 35204bbca54537543b5a2a9f17ddfdff, type: 3}
+  - {fileID: 21300000, guid: 7ed3ad1d7dda11d4d8052cbeab6cef8c, type: 3}
+  - {fileID: 21300000, guid: f0a87c2df5b15b94aa456c9e0d19953a, type: 3}
+  - {fileID: 21300000, guid: bcee52ee089fad44cbd89ebbc4a50597, type: 3}
+  - {fileID: 21300000, guid: 5105490f88135d84aa4f27361434b420, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 5
+  - 20
+  - 12
+  - 2
+  - 21
+  - 18
+  - 15
+  - 6
+  - 17
+  - 8
+  - 9
+  - 13
+  - 19
+  - 11
+  - 1
+  - Frame 1597880832 (2)
+  - 14
+  - 4
+  - "\u0437\u0430\u043C\u043E\u043A"
+  - Frame 1597880832
+  - 16
+  - 10
+  - 3
+  - "\u0437\u0430\u043C\u043E\u043A-1"
+  - 7
+  m_RenderDataMap: {}
+  m_Tag: RoadMapAtals
+  m_IsVariant: 0
