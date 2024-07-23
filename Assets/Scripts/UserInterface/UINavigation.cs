@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameCore;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UserInterface
 {
@@ -15,6 +18,11 @@ namespace UserInterface
         public CanvasGroup LoadingMenu;
         public CanvasGroup GameMenu;
 
+        [SerializeField] private TextMeshProUGUI _winText;
+        [SerializeField] private TextMeshProUGUI _buttonGameOverText;
+        [SerializeField] private Button _gameOverNextButton;
+        [SerializeField] private Button _gameOverWatchAdsButton;
+        
         public Action OnActivePopupChanged;
         public Action OnGameStarted;
         
@@ -23,7 +31,6 @@ namespace UserInterface
             ResetPopups();
             OpenGroup(LoadingMenu);
             CloseGroup(GameMenu);
-            ResetPopups();
         }
 
         private void ResetPopups()
@@ -52,31 +59,99 @@ namespace UserInterface
         
         public void OpenMenu()
         {
-            StartCoroutine(OpenPopup(0,0));
+            StartCoroutine(OpenPopup(0,0,1));
         }
         
         public void OpenWheelPopup()
         {
-            StartCoroutine(OpenPopup(1,0));
+            StartCoroutine(OpenPopup(1,0,2));
         }
 
-        public void OpenShipUI()
+        public void OpenGameUI(int levelIndex)
         {
-            StartCoroutine(OpenPopup(2,0));
-            OnGameStarted?.Invoke();
+            GameInstance.MapRoadNavigation.SetCurrentLevelIndex(levelIndex);
+            StartCoroutine(OpenPopup(2,0,0));
+        }
+        
+        public void OpenNextLVLGameUI()
+        {
+            GameInstance.MapRoadNavigation.SetCurrentLevelIndex(GameInstance.MapRoadNavigation.GetCurrentLevelIndex() + 1);
+            StartCoroutine(OpenPopup(2,0,0));
+        }
+        
+        public void OpenCurrentLVLGameUI()
+        {
+            GameInstance.MapRoadNavigation.SetCurrentLevelIndex(GameInstance.MapRoadNavigation.GetCurrentLevelIndex());
+            StartCoroutine(OpenPopup(2,0,0));
         }
 
         public void OpenBattleUI()
         {
-            StartCoroutine(OpenPopup(2, 1));
+            StartCoroutine(OpenPopup(2, 1,0));
+        }
+
+        public void OpenPauseUI()
+        {
+            SelectGameBattlePopup(0);
+        }
+
+        public void ClosePauseUI()
+        {
+            CloseGroup(GameBattleShipPopups[0]);
+        }
+
+        public void CloseGameOverPopup()
+        {
+            CloseGroup(GameBattleShipPopups[1]);
+            GameInstance.FXController.StopLoseFX();
         }
         
-        private IEnumerator OpenPopup(int index, int indexDop)
+        public void OpenGameOverUI(bool isWin)
+        {
+            SelectGameBattlePopup(1);
+            GameInstance.Audio.PlayGameOverSound();
+            if (isWin)
+            {
+                _buttonGameOverText.text = "NEXT";
+                _winText.text = "YOU WON!";
+                GameInstance.FXController.PlayWinFX();
+                _gameOverWatchAdsButton.interactable = false;
+                _gameOverNextButton.onClick.AddListener(OpenNextLVLGameUI);
+            }
+            else
+            {
+                _buttonGameOverText.text = "REPEAT";
+                _winText.text = "GAME OVER";
+                GameInstance.FXController.PlayLoseFX();
+                _gameOverNextButton.onClick.AddListener(OpenCurrentLVLGameUI);
+                _gameOverWatchAdsButton.interactable = true;
+            }
+        }
+        
+        private IEnumerator OpenPopup(int index, int indexDop, int indexFX)
         {
             TransitionAnimation();
             yield return new WaitForSeconds(1f);
+            ResetPopups();
             SelectPopup(index);
-            SelectShipPopup(indexDop);
+            SelectGamePopup(indexDop);
+            GameInstance.FXController.DisableWinShower();
+            GameInstance.FXController.StopLoseFX();
+            switch (indexFX)
+            {
+                case 0:
+                    GameInstance.FXController.PlayBackgroundParticleGame();
+                    GameInstance.FXController.DisableBackgroundParticleMenu();
+                    OnGameStarted?.Invoke();
+                    break;
+                case 1:
+                    GameInstance.FXController.DisableBackgroundParticleGame();
+                    GameInstance.FXController.PlayBackgroundParticleMenu();
+                    break;
+                case 2:
+                    GameInstance.FXController.DisableParticles();
+                    break;
+            }
         }
 
         public void TransitionAnimation()
@@ -119,7 +194,7 @@ namespace UserInterface
             OnActivePopupChanged?.Invoke();
         }
         
-        private void SelectShipPopup(int selectedIndex)
+        private void SelectGamePopup(int selectedIndex)
         {
             for (var i = 0; i < GameShipPopups.Count; i++)
             {
@@ -140,7 +215,7 @@ namespace UserInterface
             OnActivePopupChanged?.Invoke();
         }
         
-        private void SelectShipBattlePopup(int selectedIndex)
+        private void SelectGameBattlePopup(int selectedIndex)
         {
             for (var i = 0; i < GameBattleShipPopups.Count; i++)
             {

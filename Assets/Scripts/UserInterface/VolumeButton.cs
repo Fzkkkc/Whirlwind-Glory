@@ -19,6 +19,11 @@ namespace UserInterface
             _volumeButtonImage ??= GetComponent<Image>();
         }
 
+        private void Start()
+        {
+            ChangeSpriteButton();
+        }
+
         public void ChangeSpriteButton()
         {
             if (_isOff)

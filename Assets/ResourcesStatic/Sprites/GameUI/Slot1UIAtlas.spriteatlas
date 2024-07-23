@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Slot1UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: a81e6aaf14c40804384bd1b506ba4403, type: 3}
+    - {fileID: 2800000, guid: 1cbd4f8330386c142a1ef5308f09faf0, type: 3}
+    - {fileID: 2800000, guid: 6ef3a73d493bc8c449a38e814aa691d6, type: 3}
+    - {fileID: 2800000, guid: f94dd1c1db1cf164c88792e14eb848e0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - f94dd1c1db1cf164c88792e14eb848e0: 21300000
+    - 1cbd4f8330386c142a1ef5308f09faf0: 21300000
+    - 6ef3a73d493bc8c449a38e814aa691d6: 21300000
+    - a81e6aaf14c40804384bd1b506ba4403: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f94dd1c1db1cf164c88792e14eb848e0, type: 3}
+  - {fileID: 21300000, guid: 1cbd4f8330386c142a1ef5308f09faf0, type: 3}
+  - {fileID: 21300000, guid: 6ef3a73d493bc8c449a38e814aa691d6, type: 3}
+  - {fileID: 21300000, guid: a81e6aaf14c40804384bd1b506ba4403, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "\u0411\u0413"
+  - Frame 1597880832
+  - Frame 1597880833
+  - Frame 52
+  m_RenderDataMap: {}
+  m_Tag: Slot1UIAtlas
+  m_IsVariant: 0

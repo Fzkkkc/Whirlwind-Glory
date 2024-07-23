@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GameCore;
 using UnityEngine;
 
 namespace UserInterface
@@ -27,6 +28,8 @@ namespace UserInterface
             _uiNavigation.OpenGroup(_uiNavigation.GameMenu);
             _uiNavigation.OpenGroup(_uiNavigation.GamePopups[0]);
             _uiNavigation.CloseGroup(_uiNavigation.LoadingMenu);
+            GameInstance.FXController.DisableBackgroundParticleGame();
+            GameInstance.FXController.PlayBackgroundParticleMenu();
         }
     }
 }

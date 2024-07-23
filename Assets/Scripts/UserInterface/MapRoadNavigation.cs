@@ -12,11 +12,10 @@ namespace UserInterface
         [SerializeField] private List<Image> _levelImages;
         private int _level;
 
-        private void OnValidate()
-        {
-            
-        }
+        private int _currentLevel;
 
+        public Action<int> OnCurrentLevelValueChanged;
+        
         private int PrefsLevel
         {
             get => int.Parse(PlayerPrefs.GetString("PREFS_Level", "0"));
@@ -33,6 +32,17 @@ namespace UserInterface
         {
             PrefsLevel = _level = (_level + 1);
             OpenButtonsLevel();
+        }
+
+        public void SetCurrentLevelIndex(int index)
+        {
+            _currentLevel = index;
+            OnCurrentLevelValueChanged?.Invoke(_currentLevel);
+        }
+        
+        public int GetCurrentLevelIndex()
+        {
+            return _currentLevel;
         }
 
         private void OpenButtonsLevel()
