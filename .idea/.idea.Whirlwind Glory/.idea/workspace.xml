@@ -7,115 +7,42 @@
   <component name="ChangeListManager">
     <list default="true" id="2b93e8fd-0096-4b75-bcbd-24efdcb36b46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whirlwind Glory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/CameraUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/CameraUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 86.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 87.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Frame 88.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/MenuUIAtlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/MenuUIAtlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/18.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/19.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/20.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/21.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/RoadMapAtals.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/NavigationsImages/RoadMapAtals.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Гл экран (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Гл экран (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Экран загрузки (игры).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/MenuUI/Экран загрузки (игры).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590 (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590 (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590 (2).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880590.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880591 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880591 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880591.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880591.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880644.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880644.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880675.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 1597880675.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Frame 52.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Slot1UIAtlas.spriteatlas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Slot1UIAtlas.spriteatlas.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Vector 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/Vector 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/БГ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/БГ.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/рыбка 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/Slot1UI/рыбка 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 103.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 104.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 105.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 105.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 52.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 53.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 54.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 56.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Frame 69.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Group 4 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Group 4 (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/PlayablePartWheel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/PlayablePartWheel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/WheelUIAtlas.spriteatlas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/WheelUIAtlas.spriteatlas.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Гл экран (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Sprites/WheelUI/Гл экран (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Bread.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Bread.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Coffee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Coffee.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Ketchup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Ketchup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MilkBottle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MilkBottle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MilkCorb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MilkCorb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PurpleJam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PurpleJam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RedJam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RedJam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SodaPurple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SodaPurple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SodaYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SodaYellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SodsRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SodsRed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/YellowJam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/YellowJam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/YogurtPurple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/YogurtPurple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/YogurtRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/YogurtRed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/YogurtYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/YogurtYellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Basics/lightray1_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Basics/lightray1_ADD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Basics/rocketgradient_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Basics/rocketgradient_ADD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_ground_3x3_AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_ground_3x3_AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_soft_blank_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_soft_blank_ADD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_soft_spiky_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Fire/fire_soft_spiky_ADD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Unsorted/ice_spikes_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Unsorted/ice_spikes_ADD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Unsorted/snowflake_AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Materials/Misc/Unsorted/snowflake_AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Environment/Fire/Trails/ToonFireTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Environment/Fire/Trails/ToonFireTrail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorBlueTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorBlueTrail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorPurpleTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorPurpleTrail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorYellowTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResourcesStatic/Epic Toon FX/Prefabs/Interactive/Trails/LightningFloorYellowTrail.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/WheelLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/WheelLogic.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/AudioSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/AudioSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/CameraRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/CameraRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/DragObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/DragObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/FXController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/FXController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfMainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfMainController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterface/MapRoadNavigation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterface/MapRoadNavigation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,25 +66,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RouletteLogicEnchant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/VolumeButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/SettingsButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/AudioCueScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/SpotForObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UITextPlayerMoves.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UITextCurrentLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/MapRoadNavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShipBattleGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/LoadingScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/DragObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/AudioSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/AdsInitializer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/RewardedAdsButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/FXController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfMainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/SettingsButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/CameraRenderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/DragObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/ShelfMainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/AudioSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/FXController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/ButtonFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/UINavigation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInterface/MapRoadNavigation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCore/GameInstance.cs" />
       </list>
     </option>
   </component>
@@ -214,7 +143,15 @@
       <workItem from="1721044018796" duration="7796000" />
       <workItem from="1721116940563" duration="7019000" />
       <workItem from="1721643433604" duration="7465000" />
-      <workItem from="1721724300683" duration="21969000" />
+      <workItem from="1721724300683" duration="22685000" />
+      <workItem from="1721823656332" duration="492000" />
+      <workItem from="1721910136119" duration="2071000" />
+      <workItem from="1721983496871" duration="1852000" />
+      <workItem from="1722333723330" duration="14000" />
+      <workItem from="1722427077548" duration="61000" />
+      <workItem from="1722428161745" duration="28000" />
+      <workItem from="1722507627620" duration="1698000" />
+      <workItem from="1722588737412" duration="11527000" />
     </task>
     <servers />
   </component>
@@ -247,9 +184,9 @@
       <screen x="0" y="0" width="1707" height="912" />
     </state>
     <state x="510" y="209" key="run.anything.popup/0.0.1707.912@0.0.1707.912" timestamp="1721061201103" />
-    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1719227555334">
+    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1722596945438">
       <screen x="0" y="0" width="1707" height="912" />
     </state>
-    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1707.912@0.0.1707.912" timestamp="1719227555334" />
+    <state x="516" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1707.912@0.0.1707.912" timestamp="1722596945438" />
   </component>
 </project>

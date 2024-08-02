@@ -15,7 +15,7 @@ namespace UserInterface
         private int _currentLevel;
 
         public Action<int> OnCurrentLevelValueChanged;
-        
+
         private int PrefsLevel
         {
             get => int.Parse(PlayerPrefs.GetString("PREFS_Level", "0"));
@@ -45,12 +45,62 @@ namespace UserInterface
             return _currentLevel;
         }
 
-        private void OpenButtonsLevel()
+        public void OpenButtonsLevel()
         {
-            for (int i = 0; i <= PrefsLevel; i++)
+            UpdateAllButtonStates();
+            int numButtons = _levelButtons.Count;
+            int numImages = _levelImages.Count;
+            int numSprites = _levelNumbersSprites.Count;
+
+            for (int i = 0; i < numButtons; i++)
             {
-                _levelButtons[i].interactable = true;
-                _levelImages[i].sprite = _levelNumbersSprites[i];
+                if (i <= PrefsLevel)
+                {
+                    _levelButtons[i].interactable = true;
+
+                    if (i < numImages)
+                    {
+                        if (i < numSprites)
+                        {
+                            _levelImages[i].sprite = _levelNumbersSprites[i];
+                        }
+                    }
+                }
+                else
+                {
+                    _levelButtons[i].interactable = false;
+                }
+            }
+            UpdateChildObjects();
+        }
+        
+        public void UpdateAllButtonStates()
+        {
+            for (int i = 0; i < _levelButtons.Count; i++)
+            {
+                int starCount = PlayerPrefs.GetInt($"Level_{i}_Stars", 0); 
+
+                var childButtons = _levelButtons[i].GetComponentsInChildren<Button>(true); 
+
+                for (int j = 0; j < childButtons.Length; j++)
+                {
+                    childButtons[j].interactable = (j <= starCount);
+                }
+            }
+        }
+        
+        public void UpdateChildObjects()
+        {
+            foreach (Button button in _levelButtons)
+            {
+                // Проверяем, доступна ли кнопка для взаимодействия
+                bool isInteractable = button.interactable;
+
+                // Включаем или выключаем все дочерние объекты
+                foreach (Transform child in button.transform)
+                {
+                    child.gameObject.SetActive(isInteractable);
+                }
             }
         }
     }

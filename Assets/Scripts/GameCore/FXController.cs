@@ -15,11 +15,14 @@ namespace Services
         [SerializeField] private ParticleSystem _bombFX;
         
         [SerializeField] private ParticleSystem _loseFX3;
+        [SerializeField] private ParticleSystem _tapFX;
         
         [SerializeField] private List<ParticleSystem> _particleSystems;
         [SerializeField] private List<ParticleSystem> _backgroundParticleSystems;
         [SerializeField] private List<ParticleSystem> _bgParticleGame;
-        
+
+        public List<ParticleSystem> RightChoiceParticleSystems;
+        public List<ParticleSystem> StarsFX;
         public void Init()
         {
             DisableParticles();
@@ -31,6 +34,13 @@ namespace Services
             {
                 particle.gameObject.SetActive(true);
             }
+        }
+        
+        public void PlayTapFX(Vector3 position)
+        {
+            _tapFX.transform.position = position;
+            _tapFX.gameObject.SetActive(true);
+            _tapFX.Play();
         }
         
         public void DisableBackgroundParticleMenu()
@@ -69,6 +79,13 @@ namespace Services
             _winShowerFX.Play();
         }
 
+        public void PlayRightChoiceFX(int index, Vector3 position)
+        {
+            RightChoiceParticleSystems[index].transform.position = new Vector3(position.x, position.y, 0f);
+            RightChoiceParticleSystems[index].gameObject.SetActive(true);
+            RightChoiceParticleSystems[index].Play();
+        }
+        
         public void DisableWinShower()
         {
             _winShowerFX.gameObject.SetActive(false);

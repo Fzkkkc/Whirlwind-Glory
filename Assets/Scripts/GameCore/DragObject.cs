@@ -14,6 +14,8 @@ namespace GameCore
         private Coroutine _moveCoroutine;
         private Transform _currentSpot;
 
+        [SerializeField] private int _index;
+        
         private void Awake()
         {
             _mainCamera = Camera.main;
@@ -56,6 +58,7 @@ namespace GameCore
                 _startPosition = transform.position = _currentSpot.position;
                 transform.SetParent(_currentSpot);
                 GameInstance.Audio.PlayPlayerRightChoice();
+                GameInstance.FXController.PlayRightChoiceFX(_index,transform.position);
             }
             else
             {

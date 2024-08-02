@@ -118,6 +118,7 @@
             <e p="SpotForObject.cs" t="Include" />
           </e>
           <e p="UserInterface" t="Include">
+            <e p="ButtonFX.cs" t="Include" />
             <e p="LoadingScreen.cs" t="Include" />
             <e p="MapRoadNavigation.cs" t="Include" />
             <e p="SettingsButtonAnimation.cs" t="Include" />

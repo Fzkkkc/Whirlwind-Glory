@@ -10,46 +10,41 @@ namespace UserInterface
 {
     public class UINavigation : MonoBehaviour
     {
-        public List<CanvasGroup> GamePopups;
-        public List<CanvasGroup> GameShipPopups;
-        public List<CanvasGroup> GameBattleShipPopups;
-        [SerializeField] private Animator _transitionAnimator;
+        public List<CanvasGroup> MainPopups;
+        public List<CanvasGroup> GameShelfPopups;
+        [SerializeField] private Animator _transitionPopupAnimator;
+        [SerializeField] private Animator _trainingPopupAnimator;
         
-        public CanvasGroup LoadingMenu;
-        public CanvasGroup GameMenu;
+        public CanvasGroup LoadingMenuUI;
+        public CanvasGroup GameMenuUI;
 
-        [SerializeField] private TextMeshProUGUI _winText;
+        [SerializeField] private TextMeshProUGUI _winTextGameOver;
         [SerializeField] private TextMeshProUGUI _buttonGameOverText;
         [SerializeField] private Button _gameOverNextButton;
         [SerializeField] private Button _gameOverWatchAdsButton;
+        [SerializeField] private AudioCueScriptableObject StarIN;
         
-        public Action OnActivePopupChanged;
         public Action OnGameStarted;
+
+        private bool _isTraining = false;
         
         public void Init()
         {
             ResetPopups();
-            OpenGroup(LoadingMenu);
-            CloseGroup(GameMenu);
+            OpenGroup(LoadingMenuUI);
+            CloseGroup(GameMenuUI);
         }
 
         private void ResetPopups()
         {
-            foreach (var popup in GamePopups)
+            foreach (var popup in MainPopups)
             {
                 popup.alpha = 0f;
                 popup.blocksRaycasts = false;
                 popup.interactable = false;
             }
             
-            foreach (var popup in GameShipPopups)
-            {
-                popup.alpha = 0f;
-                popup.blocksRaycasts = false;
-                popup.interactable = false;
-            }
-            
-            foreach (var popup in GameBattleShipPopups)
+            foreach (var popup in GameShelfPopups)
             {
                 popup.alpha = 0f;
                 popup.blocksRaycasts = false;
@@ -62,58 +57,43 @@ namespace UserInterface
             StartCoroutine(OpenPopup(0,0,1));
         }
         
-        public void OpenWheelPopup()
-        {
-            StartCoroutine(OpenPopup(1,0,2));
-        }
-
         public void OpenGameUI(int levelIndex)
         {
             GameInstance.MapRoadNavigation.SetCurrentLevelIndex(levelIndex);
-            StartCoroutine(OpenPopup(2,0,0));
+            StartCoroutine(OpenPopup(1,0,0));
+
+            _isTraining = PlayerPrefs.GetInt("FirstPlay", 0) == 0;
         }
         
         public void OpenNextLVLGameUI()
         {
             GameInstance.MapRoadNavigation.SetCurrentLevelIndex(GameInstance.MapRoadNavigation.GetCurrentLevelIndex() + 1);
-            StartCoroutine(OpenPopup(2,0,0));
+            StartCoroutine(OpenPopup(1,0,0));
+            _gameOverNextButton.onClick.RemoveAllListeners();
         }
         
         public void OpenCurrentLVLGameUI()
         {
             GameInstance.MapRoadNavigation.SetCurrentLevelIndex(GameInstance.MapRoadNavigation.GetCurrentLevelIndex());
-            StartCoroutine(OpenPopup(2,0,0));
+            StartCoroutine(OpenPopup(1,0,0));
+            _gameOverNextButton.onClick.RemoveAllListeners();
         }
-
-        public void OpenBattleUI()
-        {
-            StartCoroutine(OpenPopup(2, 1,0));
-        }
-
-        public void OpenPauseUI()
-        {
-            SelectGameBattlePopup(0);
-        }
-
-        public void ClosePauseUI()
-        {
-            CloseGroup(GameBattleShipPopups[0]);
-        }
-
+        
         public void CloseGameOverPopup()
         {
-            CloseGroup(GameBattleShipPopups[1]);
+            CloseGroup(GameShelfPopups[0]);
             GameInstance.FXController.StopLoseFX();
         }
         
         public void OpenGameOverUI(bool isWin)
         {
-            SelectGameBattlePopup(1);
+            SelectUIPopup(GameShelfPopups,0);
             GameInstance.Audio.PlayGameOverSound();
+            StartCoroutine(OpenStarsUI());
             if (isWin)
             {
                 _buttonGameOverText.text = "NEXT";
-                _winText.text = "YOU WON!";
+                _winTextGameOver.text = "YOU WON!";
                 GameInstance.FXController.PlayWinFX();
                 _gameOverWatchAdsButton.interactable = false;
                 _gameOverNextButton.onClick.AddListener(OpenNextLVLGameUI);
@@ -121,10 +101,41 @@ namespace UserInterface
             else
             {
                 _buttonGameOverText.text = "REPEAT";
-                _winText.text = "GAME OVER";
+                _winTextGameOver.text = "GAME OVER";
                 GameInstance.FXController.PlayLoseFX();
                 _gameOverNextButton.onClick.AddListener(OpenCurrentLVLGameUI);
                 _gameOverWatchAdsButton.interactable = true;
+            }
+        }
+
+        private void HideTraining()
+        {
+            StartCoroutine(HideTrainingCoroutine());
+        }
+
+        private IEnumerator HideTrainingCoroutine()
+        {
+            yield return new WaitForSeconds(3f);
+            TransitionAnimation();
+            yield return new WaitForSeconds(1f);
+            _trainingPopupAnimator.SetTrigger("TrainingOut");
+            ResetPopups();
+            SelectUIPopup(MainPopups, 1);
+        }
+        
+        private IEnumerator OpenStarsUI()
+        {
+            for (int i = 0; i < GameInstance.ShelfMainMainController.StarCounter; i++)
+            {
+                GameInstance.FXController.StarsFX[i].gameObject.SetActive(true);
+                GameInstance.FXController.StarsFX[i].Play();
+                GameInstance.Audio.Play(StarIN);
+                yield return new WaitForSeconds(1f);
+                
+                if (i < GameInstance.ShelfMainMainController._starButtons.Count)
+                {
+                    GameInstance.ShelfMainMainController._starButtons[i].interactable = true;
+                }
             }
         }
         
@@ -132,11 +143,19 @@ namespace UserInterface
         {
             TransitionAnimation();
             yield return new WaitForSeconds(1f);
+            GameInstance.MapRoadNavigation.OpenButtonsLevel();
             ResetPopups();
-            SelectPopup(index);
-            SelectGamePopup(indexDop);
+            SelectUIPopup(MainPopups, index);
             GameInstance.FXController.DisableWinShower();
             GameInstance.FXController.StopLoseFX();
+            if (_isTraining)
+            {
+                SelectUIPopup(GameShelfPopups,1);
+                _trainingPopupAnimator.SetTrigger("TrainingIN");
+                _isTraining = false;
+                PlayerPrefs.SetInt("FirstPlay", 1);
+                HideTraining();
+            }
             switch (indexFX)
             {
                 case 0:
@@ -156,7 +175,7 @@ namespace UserInterface
 
         public void TransitionAnimation()
         {
-            _transitionAnimator.SetTrigger("Transition");
+            _transitionPopupAnimator.SetTrigger("Transition");
         }
         
         public void OpenGroup(CanvasGroup canvasGroup)
@@ -172,68 +191,24 @@ namespace UserInterface
             canvasGroup.blocksRaycasts = false;
             canvasGroup.interactable = false;
         }
-        
-        private void SelectPopup(int selectedIndex)
+
+        private void SelectUIPopup(List<CanvasGroup> canvasGroups, int selectedIndexPopup)
         {
-            for (var i = 0; i < GamePopups.Count; i++)
+            for (var i = 0; i < canvasGroups.Count; i++)
             {
-                if (i == selectedIndex)
+                if (i == selectedIndexPopup)
                 {
-                    GamePopups[i].alpha = 1f;
-                    GamePopups[i].blocksRaycasts = true;
-                    GamePopups[i].interactable = true;
+                    canvasGroups[i].alpha = 1f;
+                    canvasGroups[i].blocksRaycasts = true;
+                    canvasGroups[i].interactable = true;
                 }
                 else
                 {
-                    GamePopups[i].alpha = 0f;
-                    GamePopups[i].blocksRaycasts = false;
-                    GamePopups[i].interactable = false;
+                    canvasGroups[i].alpha = 0f;
+                    canvasGroups[i].blocksRaycasts = false;
+                    canvasGroups[i].interactable = false;
                 }
             }
-            
-            OnActivePopupChanged?.Invoke();
-        }
-        
-        private void SelectGamePopup(int selectedIndex)
-        {
-            for (var i = 0; i < GameShipPopups.Count; i++)
-            {
-                if (i == selectedIndex)
-                {
-                    GameShipPopups[i].alpha = 1f;
-                    GameShipPopups[i].blocksRaycasts = true;
-                    GameShipPopups[i].interactable = true;
-                }
-                else
-                {
-                    GameShipPopups[i].alpha = 0f;
-                    GameShipPopups[i].blocksRaycasts = false;
-                    GameShipPopups[i].interactable = false;
-                }
-            }
-            
-            OnActivePopupChanged?.Invoke();
-        }
-        
-        private void SelectGameBattlePopup(int selectedIndex)
-        {
-            for (var i = 0; i < GameBattleShipPopups.Count; i++)
-            {
-                if (i == selectedIndex)
-                {
-                    GameBattleShipPopups[i].alpha = 1f;
-                    GameBattleShipPopups[i].blocksRaycasts = true;
-                    GameBattleShipPopups[i].interactable = true;
-                }
-                else
-                {
-                    GameBattleShipPopups[i].alpha = 0f;
-                    GameBattleShipPopups[i].blocksRaycasts = false;
-                    GameBattleShipPopups[i].interactable = false;
-                }
-            }
-            
-            OnActivePopupChanged?.Invoke();
         }
     }
 }

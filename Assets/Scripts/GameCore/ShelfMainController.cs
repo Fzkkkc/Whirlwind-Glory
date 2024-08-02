@@ -26,11 +26,12 @@ namespace GameCore
         private int _playerScore;
         [SerializeField] private TextMeshProUGUI _playerScoreText;
         [SerializeField] private TextMeshProUGUI _playerScoreTextGameOver;
-        [SerializeField] private List<Button> _starButtons;
+        [SerializeField] public List<Button> _starButtons;
         
         private int _playerMatched = 0;
 
         public int _initalMoves = 0;
+        public int StarCounter;
         
         private int PlayerMoves
         {
@@ -65,29 +66,20 @@ namespace GameCore
                 OnBigShelfGameStarted?.Invoke();
             }
 
+            StarCounter = 0;
             _gameSlider.value = 0;
             _playerScore = 0;
             _playerMatched = 0;
             UpdateUI();
             GameTimer.StartTimer();
-            SetStarGameOverButtonsInteractable(-1);
+            SetStarGameOverButtonsInteractable();
         }
 
-        private void SetStarGameOverButtonsInteractable(int index)
+        private void SetStarGameOverButtonsInteractable()
         {
-            if (index == -1)
+            foreach (var starButton in _starButtons)
             {
-                foreach (var starButton in _starButtons)
-                {
-                    starButton.interactable = false;
-                }
-            }
-            else
-            {
-                for (var i = 0; i <= index; i++)
-                {
-                    _starButtons[i].interactable = true;
-                }
+                starButton.interactable = false;
             }
         }
         
@@ -95,10 +87,10 @@ namespace GameCore
         {
             if (_playerMatched == (_initalMoves - 20) / 3) 
             {
-                GameInstance.UINavigation.OpenGameOverUI(true);
                 GameInstance.MapRoadNavigation.IncreaseLevel();
                 GameTimer.StopTimer();
                 SetStarsOfSlider();
+                GameInstance.UINavigation.OpenGameOverUI(true);
             }
         }
 
@@ -112,15 +104,25 @@ namespace GameCore
         {
             if (_gameSlider.value >= 20 &&_gameSlider.value < 70)
             {
-                SetStarGameOverButtonsInteractable(0);
+                StarCounter = 1;
             }   
             else if(_gameSlider.value >= 70 && _gameSlider.value < 90)
             {
-                SetStarGameOverButtonsInteractable(1);
+                StarCounter = 2;
             } 
             else if(_gameSlider.value >= 90)
             {
-                SetStarGameOverButtonsInteractable(2);
+                StarCounter = 3;
+            }
+            
+            int currentLevelIndex = GameInstance.MapRoadNavigation.GetCurrentLevelIndex();
+            
+            int previousStarCount = PlayerPrefs.GetInt($"Level_{currentLevelIndex}_Stars", 0); 
+            
+            if (StarCounter > previousStarCount)
+            {
+                PlayerPrefs.SetInt($"Level_{currentLevelIndex}_Stars", StarCounter);
+                PlayerPrefs.Save(); 
             }
         }
         

@@ -13,6 +13,7 @@ namespace Services
         public AudioCueScriptableObject PlayerRightSound;
         public AudioCueScriptableObject GameOverSound;
         public AudioCueScriptableObject ThreeObjectSound;
+        public AudioCueScriptableObject TapSound;
         
         private float PrefsSFXVolume
         {
